@@ -1,0 +1,321 @@
+
+/*Police de la maquette*/
+
+@font-face {
+
+    font-family: "Libération" ;
+    src: url("../fonts/LiberationSans-Regular-webfont.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+
+    font-family: "Liberation";
+    src: url(../fonts/LiberationSans-Bold-webfont.ttf);
+    font-weight: 600;
+}
+
+* {
+
+    font-family: "Liberation";
+    font-weight: 500;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Maquette*/
+
+body {
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background: #1c1c1c;
+}
+
+.container {
+
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+
+    padding: 10px 0 5px 0;
+    background-image: url(../Images/background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+}
+
+header .container {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+header .header-left p {
+
+    color:black;
+    margin-top: 10px;
+}
+header .header-left p  span {
+
+    color: orange;
+    margin-top: 10px;
+}
+
+
+header .container .logo {
+
+    width: 180px;
+   
+}
+
+header .container nav h1 {
+
+    font-size: 15px;
+    margin-top: 20px;
+
+}
+
+header .header-right p {
+
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+header .container nav a {
+
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 50px;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+header .container nav a:first-child {
+
+    margin-left: 0;
+}
+
+/* MAIN */
+
+main .container {
+    background:rgb(243 243 243);
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* GRID */ 
+
+
+main .grid {
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+main .container .grid .sale {
+
+    right: -55px;
+    background:rgb(41 41 41);
+    color:orange;
+    font-size: 20px;
+    padding: 20px 20px;
+    font-weight: bolder;
+    border-radius: 10%;
+    margin: 80px;
+}
+
+main .grid .item {
+    width:50%;
+    color: black;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+main .grid .item .image {
+    background-repeat: no-repeat;
+    background-size: center;
+    background-position: center;
+    padding-top: 100%;
+    margin-bottom: 10px;
+}
+
+main .prices {
+
+    color: black;
+}
+
+main .sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+main .prices .old-price
+ {
+    font-size: 20px;
+    text-decoration: line-through;
+}
+
+main .prices .price
+ {
+    font-size: 20px;
+    color: orange;
+    display: inline block
+}
+
+main .grid .item1 .image {
+    background-image: url(../Images/gant-boxe-2.png);
+}
+
+main .grid .item2 .image {
+    background-image: url(../Images/gant-boxe-1.png);
+}
+
+main .grid .item3 .image {
+    background-image: url(../Images/gant-boxe-2.png);
+}
+
+main .grid .item4 .image {
+    background-image: url(../Images/gant-boxe-1.png);
+
+}
+
+main .grid .item h2 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+main .grid .item a {
+    background: black;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+main .grid .item a:hover {
+    background: #f11e23;
+}
+
+/*footer*/
+
+footer {
+	background-color:hsl(0deg 0% 22%);
+	padding: 80px 0;
+}
+
+footer .container .text p {
+    font-size: 0.8em;
+    text-align: center;
+    color:rgb(171 171 171);
+}
+
+footer .details .container .text p {
+		font-size: 0.8em;
+		text-align: center;
+        color:rgb(171 171 171);
+
+}
+    
+
+footer .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .logo .logo-item {
+    text-align: center;
+    color: #fff;
+}
+
+
+footer .logo .logo-item img {
+   margin-bottom: 20px;
+}
+
+footer .details {
+    border-top: 3px solid ;
+    color: hsl(0deg 0% 51%);
+    margin-top: 40px;
+    padding-top: 40px;
+}
+
+footer .details .container .socials{
+
+    text-align: center;
+    align-items: center;
+
+}
+
+
+
+/*media querries*/
+
+@media (max-width: 576px) {
+    
+    .container {
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    header .container .nav {
+
+
+    }
+
+    header  .container.logo {
+
+        font-size: 18px;
+   
+    }
+
+    main .container img{
+
+        width: 120%;
+    }
+
+    main .grid .item {
+   
+        width: 60%;
+        text-align: center;
+    }
+
+    main .container .sale{
+
+        width: 40%;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
